@@ -1,7 +1,7 @@
 /*
  * @Author: allin.zhang
  * @Date: 2021-10-28 17:33:19
- * @LastEditTime: 2022-04-07 09:44:23
+ * @LastEditTime: 2022-04-07 11:55:24
  * @LastEditors: allin.zhang
  * @Description: 
  * @FilePath: /app_monitor/src/modules/log/log.service.ts
@@ -37,7 +37,7 @@ export class AppLogService {
   //   return null;
   // }
 
-  async findAll(userId: number): Promise<AppLogEntity[]> {
+  async findAll(): Promise<AppLogEntity[]> {
     return await this.appLogRepository.find({
       where: {
         // userId,

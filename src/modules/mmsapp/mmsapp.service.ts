@@ -1,7 +1,7 @@
 /*
  * @Author: allin.zhang
  * @Date: 2021-10-28 17:33:19
- * @LastEditTime: 2022-04-07 10:14:03
+ * @LastEditTime: 2022-04-07 11:55:53
  * @LastEditors: allin.zhang
  * @Description: 
  * @FilePath: /app_monitor/src/modules/mmsapp/mmsapp.service.ts
@@ -25,19 +25,7 @@ export class MmsAppService {
     return null;
   }
 
-  // async checkUsername(username: string): Promise<MmsAppEntity> {
-  //   const checkUser = await this.mmsAppRepository.findOne({
-  //     where: {
-  //       // username
-  //     },
-  //   });
-  //   if (checkUser) {
-  //     return checkUser;
-  //   }
-  //   return null;
-  // }
-
-  async findAll(userId: number): Promise<MmsAppEntity[]> {
+  async findAll(): Promise<MmsAppEntity[]> {
     return await this.mmsAppRepository.find({
       where: {
         // userId,

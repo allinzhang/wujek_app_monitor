@@ -1,7 +1,7 @@
 /*
  * @Author: allin.zhang
  * @Date: 2021-10-28 17:15:28
- * @LastEditTime: 2022-04-07 10:15:37
+ * @LastEditTime: 2022-04-07 11:55:48
  * @LastEditors: allin.zhang
  * @Description: 
  * @FilePath: /app_monitor/src/modules/mmsapp/mmsapp.controller.ts
@@ -71,7 +71,7 @@ export class MmsAppController {
   // @UseGuards(AuthGuard('jwt'))
   @Get()
   async findAll(@Request() req) {
-    const list = await this.mssAppService.findAll(req.user.userId);
+    const list = await this.mssAppService.findAll();
     return {
       code: 200,
       data: list,
