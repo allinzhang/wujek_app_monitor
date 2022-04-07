@@ -1,7 +1,7 @@
 /*
  * @Author: allin.zhang
  * @Date: 2022-04-06 15:39:38
- * @LastEditTime: 2022-04-06 15:57:12
+ * @LastEditTime: 2022-04-07 10:55:20
  * @LastEditors: allin.zhang
  * @Description: 
  * @FilePath: /app_monitor/src/main.ts
@@ -23,6 +23,6 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);
 
-  await app.listen(3000);
+  await app.listen(14002);
 }
 bootstrap();
